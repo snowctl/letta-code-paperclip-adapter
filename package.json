@@ -16,7 +16,10 @@
     }
   },
   "files": [
-    "src",
+    "src/index.ts",
+    "src/server",
+    "src/ui",
+    "src/skills",
     "dist"
   ],
   "repository": {
