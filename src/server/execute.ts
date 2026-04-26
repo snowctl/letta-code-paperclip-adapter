@@ -21,7 +21,7 @@ const DEFAULT_PAPERCLIP_AGENT_PROMPT_TEMPLATE =
   "You are an expert software engineering agent. Complete the task in the current workspace.\n\nContext:\n- Run ID: {{runId}}\n- Agent ID: {{agentId}}\n- Company ID: {{companyId}}";
 
 const __moduleDir = path.dirname(fileURLToPath(import.meta.url));
-const SKILLS_SOURCE_DIR = path.resolve(__moduleDir, "../../skills");
+const SKILLS_SOURCE_DIR = path.resolve(__moduleDir, "../skills");
 
 async function buildSkillsDir(): Promise<string> {
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "paperclip-letta-skills-"));
